@@ -13,12 +13,14 @@
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
     format("truetype");
+  font-weight: 400, 600, 700;
 }
 
 @font-face {
   font-family: "Young-serif";
   src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
     format("truetype");
+  font-weight: 400;
 }
 
 html {
@@ -59,9 +61,14 @@ h1,
 h2 {
   font-family: "Young-serif";
   color: var(--brown-800);
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 h1 {
+  color: var(--stone-900);
+}
+hr {
   color: var(--stone-900);
 }
 p.breaf {
