@@ -1,0 +1,136 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Young-serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+}
+
+html {
+  display: flex;
+  background-color: var(--stone-100);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--stone-600);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit";
+  background-color: var(--white);
+  height: min-content;
+  width: 650px;
+  min-width: 300px;
+  margin: 8rem auto;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+img.hero {
+  width: 100%;
+  border-radius: 20px;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+li {
+  padding-left: 0.8em;
+  line-height: 2;
+}
+h1,
+h2 {
+  font-family: "Young-serif";
+  color: var(--brown-800);
+}
+
+h1 {
+  color: var(--stone-900);
+}
+p.breaf {
+  margin-bottom: 30px;
+}
+h3 {
+  margin: 0px;
+  color: var(--rose-800);
+}
+
+ul.time {
+  color: var(--stone-600);
+  margin-bottom: 0px;
+}
+div.preparation-time {
+  background: var(--rose-50);
+  border-radius: 10px;
+  height: fit-content;
+  padding: 30px;
+}
+
+ul.instructions {
+  list-style: decimal;
+}
+
+ul.instructions li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  text-align: start;
+  font-weight: 300;
+  width: 50%;
+  padding-left: 2em;
+}
+
+tr {
+  height: 3rem;
+}
+
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+  color: var(--brown-800);
+  font-weight: bold;
+  text-align: start;
+  padding-left: 0.8em;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  img.hero {
+    border-radius: 0px;
+  }
+  main {
+    padding: 0px 20px;
+    padding-bottom: 20px;
+  }
+}
