@@ -39,7 +39,7 @@ body {
   background-color: var(--white);
   height: min-content;
   width: 650px;
-  min-width: 300px;
+  min-width: 340px;
   margin: 8rem auto;
   padding: 40px;
   border-radius: 30px;
